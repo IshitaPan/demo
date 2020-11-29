@@ -9,8 +9,14 @@ public class Home {
 	@RequestMapping("/")
 	public ModelAndView home() {
 		  ModelAndView mv=new ModelAndView();
-		  mv.setViewName("home.jsp");
+		  mv.setViewName("index.html");
 		return mv;
+	}
+	@RequestMapping("/login")
+	public String login() {
+		  ModelAndView mv=new ModelAndView();
+		 String a="rima";
+		return a;
 	}
 
 }
